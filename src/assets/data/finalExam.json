@@ -1,0 +1,16 @@
+{
+  "Material" : [
+    {	"directive": "Repeater", 
+			"code": "*ngFor", 
+			"explanation": "Used with an array to repeat HTML code"},
+		{	"directive": "Conditional", 
+			"code": "*ngIf", 
+			"explanation": "Query to determine what HTML code to display"},
+		{	"directive": "2-way Binding", 
+			"code": "[(ngModel)]", 
+			"explanation": "Binds an input box to a variable"},    
+		{	"directive": "Angular Styling", 
+			"code": "[ngStyle]", 
+			"explanation": "Includes CSS on an HTML tag"}	
+  ]
+}

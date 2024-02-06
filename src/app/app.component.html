@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<h4 [ngStyle]="{textAlign: 'center'}">Final Exam Application</h4>
+<mat-tab-group mat-stretch-tabs  
+               class="example-stretched-tabs mat-elevation-z4"
+		[ngStyle]="{textAlign: 'center'}">
+	
+	<mat-tab >
+    <ng-template mat-tab-label="">
+    <span class="material-symbols-sharp">
+      person
+      </span>Shared/Oberoioki<span class="material-symbols-sharp">
+        person
+        </span></ng-template>
+    <app-oberoiki-shared [oberoikiChild]="oberoikiPersonal"></app-oberoiki-shared>
+
+	</mat-tab>
+	
+	<mat-tab >
+    <ng-template mat-tab-label="">
+      <span class="material-symbols-sharp">
+        analytics
+        </span>
+        JSON/Oberoioki
+        <span class="material-symbols-sharp">
+          analytics
+          </span>
+        </ng-template>
+    
+
+<h3>Final Exam App Summer 2023</h3>
+<p *ngFor="let x of oberoikiJSON">
+  Directive: {{x.directive}}
+  <br>Code: {{x.code}}
+  <br> expanation: {{x.explanation}}
+</p>
+
+
+	</mat-tab>
+
+</mat-tab-group>
+
+<!-- End of data to be copied -->
